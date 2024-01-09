@@ -73,3 +73,10 @@
     echo $! > /home/ubuntu/.flaskpid
   args:
     chdir: /home/ubuntu/myproject
+
+- name: start test-flask app
+  become_user: ubuntu
+  shell: |
+    python -m unittest test_app.py
+  args:
+    chdir: /home/ubuntu/myproject 

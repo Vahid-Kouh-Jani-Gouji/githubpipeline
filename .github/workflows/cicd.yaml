@@ -22,7 +22,7 @@ jobs:
       # Konfiguriere die AWS CLI
       - run: mkdir -p ~/.aws/
       - run: echo "$super_secret" > ~/.aws/credentials
-        env: # Erstelle ein Github Secret AWS_CONFIG!
+        env: # Erstelle ein Github Secret AWS_CONFIG!!
           super_secret: ${{ secrets.AWS_CONFIG }}
       - run: cat ~/.aws/credentials
       - run: aws configure list-profiles

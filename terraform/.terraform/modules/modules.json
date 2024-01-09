@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"tf_ec2","Source":"./modules/ec2","Dir":"modules/ec2"},{"Key":"tf_lb","Source":"./modules/loadbalancer","Dir":"modules/loadbalancer"},{"Key":"tf_vpc","Source":"./modules/vpc","Dir":"modules/vpc"}]}

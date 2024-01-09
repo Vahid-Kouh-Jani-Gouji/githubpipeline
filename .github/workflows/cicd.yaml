@@ -73,7 +73,7 @@ jobs:
           python-version: 3.x
 
       - name: Install dependencies
-        run: pip install -chdir=/home/ubuntu/myproject -r requirements.txt
+        run: pip -chdir=/home/ubuntu/myproject install  -r requirements.txt
 
       - name: Run Python Flask Tests
         run: |

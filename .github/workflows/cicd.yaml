@@ -73,8 +73,8 @@ jobs:
           python-version: 3.x
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pip install -chdir=/home/ubuntu/myproject -r requirements.txt
 
       - name: Run Python Flask Tests
         run: |
-          python -m unittest test_app.py  
+          python -chdir=/home/ubuntu/myproject -m unittest test_app.py  

@@ -57,8 +57,9 @@
     dest: "{{ item.dest }}"
     mode: "{{ item.mode }}"
   with_items: 
-    - { url: 'https://raw.githubusercontent.com/martindubb/wiederholung/blob/main/src/app.py', dest: '/home/ubuntu/myproject/app.py', mode: '0755' }
-    - { url: 'https://raw.githubusercontent.com/martindubb/wiederholung/blob/main/src/requirements.txt', dest: '/home/ubuntu/myproject/requirements.txt', mode: '0644' }
+    - { url: 'https://raw.githubusercontent.com/martindubb/wiederholung/main/src/app.py', dest: '/home/ubuntu/myproject/app.py', mode: '0755' }
+    - { url: 'https://raw.githubusercontent.com/martindubb/wiederholung/main/src/requirements.txt', dest: '/home/ubuntu/myproject/requirements.txt', mode: '0644' }
+    - { url: 'https://raw.githubusercontent.com/martindubb/wiederholung/main/src/test_app.py', dest: '/home/ubuntu/myproject/test_app.py', mode: '0755' }
 
 - name: Install specified python requirements
   become_user: ubuntu
